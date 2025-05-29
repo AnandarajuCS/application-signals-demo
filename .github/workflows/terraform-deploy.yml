@@ -9,7 +9,7 @@ on:
 env: # hard-code resource names
   AWS_REGION: us-west-1
   TFSTATE_KEY: application-signals/demo-applications
-  TFSTATE_BUCKET: tfstate-6b808750-2bae-4e26-98ae-c284dda0e5ee #  prerequisite: manually create a bucket using  "aws s3 mb s3://tfstate-$(uuidgen | tr A-Z a-z)" and paste bucket name here.
+  TFSTATE_BUCKET: tfstate-04848af6-1f72-4a3c-befa-1230523db7de #  prerequisite: manually create a bucket using  "aws s3 mb s3://tfstate-$(uuidgen | tr A-Z a-z)" and paste bucket name here.
   TFSTATE_REGION: us-west-1
   TF_VAR_cluster_name: app-signals-demo
   TF_VAR_cloudwatch_observability_addon_version: v3.6.0-eksbuild.2
