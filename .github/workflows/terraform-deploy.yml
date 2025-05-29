@@ -13,7 +13,7 @@ env: # hard-code resource names
   TFSTATE_REGION: us-west-1
   TF_VAR_cluster_name: app-signals-demo
   TF_VAR_cloudwatch_observability_addon_version: v3.6.0-eksbuild.2
-  TOPOLOGY_BUCKET: cicd-topology-10194f0e-5e1a-477f-88bb-cf04a61ebe1e
+  TOPOLOGY_BUCKET: cicd-topology-dbae3bbb-d0d8-419e-924f-ee6552537734
   AWS_EXECUTION_ENV: ${{ github.repository }}/actions/run/${{ github.run_id }}/${{ github.job }}
 
 permissions:
