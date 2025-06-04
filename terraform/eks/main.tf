@@ -79,8 +79,9 @@ module "eks" {
 
   cluster_version                 = "1.32"
   cluster_name                    = var.cluster_name
-  cluster_endpoint_private_access = true
+  cluster_endpoint_private_access = false
   cluster_endpoint_public_access  = true
+  cluster_endpoint_public_access_cidrs = ["0.0.0.0/0"]
   vpc_id                          = module.vpc.vpc_id
   subnet_ids                      = module.vpc.private_subnets
   enable_irsa                     = true
